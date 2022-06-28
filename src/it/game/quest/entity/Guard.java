@@ -62,4 +62,25 @@ public class Guard extends Entity{
 
     }
 
+
+    public void update(){
+        setAction();
+
+        collisionOn = false;
+        gp.cChecker.checkTile(this);
+        gp.cChecker.checkObject(this,false);
+        gp.cChecker.checkPlayer(this);
+
+
+        if (!collisionOn) {
+            switch (direction) {
+                case "up" -> y -= speed;
+                case "down" -> y += speed;
+                case "left" -> x -= speed;
+                case "right" -> x += speed;
+            }
+        }
+    }
+
+
 }

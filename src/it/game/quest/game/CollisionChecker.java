@@ -190,6 +190,7 @@ public class CollisionChecker {
 
     }
 
+    //Collision to Player
     public void checkPlayer(Entity entity){
         //get entity's solidArea position
         entity.solidArea.x = entity.x + entity.solidArea.x;

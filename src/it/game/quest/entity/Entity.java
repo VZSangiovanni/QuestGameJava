@@ -30,13 +30,14 @@ public class Entity {
 
     public void update() {
 
-        setAction();
+        /*setAction();
 
         collisionOn = false;
         gp.cChecker.checkTile(this);
         gp.cChecker.checkObject(this,false);
         gp.cChecker.checkPlayer(this);
-        gp.cChecker.checkEntity(this, gp.guards);
+        // this checker is invalid, the entity check himself and don't move
+        //gp.cChecker.checkEntity(this, gp.guards);
 
         if (!collisionOn) {
             switch (direction) {
@@ -45,7 +46,7 @@ public class Entity {
                 case "left" -> x -= speed;
                 case "right" -> x += speed;
             }
-        }
+        }*/
 
     }
 
